@@ -1,0 +1,22 @@
+{
+	"env": { "node": true },
+	"extends": [
+		"eslint:recommended",
+		"airbnb-base"
+	],
+	"overrides": [
+		{
+			"extends": ["plugin:ava/recommended"],
+			"files": ["test.js"],
+			"plugins": ["ava"]
+		}
+	],
+	"parserOptions": {
+		"sourceType": "script"
+	},
+	"root": true,
+	"rules": {
+		"indent": ["error", "tab", {"SwitchCase": 1}],
+		"no-tabs": "off"
+	}
+}

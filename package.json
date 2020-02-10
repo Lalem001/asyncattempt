@@ -1,0 +1,41 @@
+{
+  "name": "async-attempt",
+  "version": "1.0.0",
+  "bugs": {
+    "url": "https://github.com/Lalem001/asyncattempt/issues"
+  },
+  "homepage": "https://github.com/Lalem001/asyncattempt#readme",
+  "keywords": [
+    "async",
+    "attempt"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "nyc": {
+    "babel-cache": true,
+    "reporter": [
+      "cobertura",
+      "html",
+      "text-summary"
+    ],
+    "silent": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lalem001/asyncattempt.git"
+  },
+  "scripts": {
+    "pretest": "eslint *.js --fix",
+    "test": "nyc ava",
+    "posttest": "nyc report"
+  },
+  "devDependencies": {
+    "ava": "^3.3.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-ava": "^10.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "lodash": "^4.17.15",
+    "nyc": "^15.0.0"
+  }
+}
